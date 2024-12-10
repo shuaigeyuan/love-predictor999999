@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)
 
 # MongoDB 配置
-app.config["MONGO_URI"] = "mongodb://localhost:27017/love_match"
+app.config["MONGO_URI"] = "mongodb+srv://291165681:SkBp7AsY6Bx6OveI@cluster0.dlahl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"  # 替换为你从MongoDB Atlas获取的连接字符串
 mongo = PyMongo(app)
 
 @app.route('/')
